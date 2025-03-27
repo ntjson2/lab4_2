@@ -21,4 +21,13 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+
+    public static void main(String[] args) {
+        Product product = Product.builder()
+                .name("Test Product")
+                .description("Test Description")
+                .price(BigDecimal.valueOf(99.99))
+                .build();
+        System.out.println(product);
+    }
 }
